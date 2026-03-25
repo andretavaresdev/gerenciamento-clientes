@@ -31,7 +31,7 @@ public class ClienteController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Cliente> deletar (@PathVariable Long id){
+    public ResponseEntity<Void> deletar (@PathVariable Long id){
         service.deletar(id);
         return ResponseEntity.noContent().build();
     }
